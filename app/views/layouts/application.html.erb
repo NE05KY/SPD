@@ -4,15 +4,13 @@
 <!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
-  <head>
-    <%= render 'layouts/head' %>
-  </head>
+<%= render 'layouts/head' %>
 
-  <body>
-    <%= render 'layouts/header' %>
-   		<%= yield %>
+<body>
+	<%= render 'layouts/header' %>
+  		<%= yield %>
     <%= render 'layouts/footer' %>
 
     <%= javascript_include_tag "application" %>
-  </body>
+</body>
 </html>

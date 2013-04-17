@@ -1,3 +1,9 @@
-<%= gravatar_image_tag teacher.email, alt: teacher.sname, :gravatar => { filetype: :png, size: 88 } %>
-<%= teacher.fname %> <%= teacher.sname %>
-<%= teacher.position %>
+<div class="panel teacher">
+	<%= link_to '#' do %>
+		<%= gravatar_image_tag teacher.email, alt: teacher.sname, :gravatar => { filetype: :png, size: 88 } %>
+		<div class="info">
+			<h6><%= teacher.fname %> <%= teacher.sname %></h6>
+			<p><%= teacher.position %></p>
+		</div>		
+	<% end %>
+</div>
