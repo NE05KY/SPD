@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.panel.teacher {
+.panel.teachers {
 	background-color: #848484;
 	height: 100%;
 	margin-bottom: 0px;
@@ -41,4 +41,35 @@
 
 .panel.teacher:hover {
 	background: #2ba6cb;
+}
+
+.teacher-bg {
+	background: url("http://placehold.it/1400x400/333333") 50% 0% no-repeat #333333;
+	width: 100%;
+	height: 400px;
+	position: relative;
+	z-index: -4;
+	margin-top: -75px;
+}
+
+.teacher {
+	position: relative;
+	margin-top: -130px;
+
+	h2 {
+		color: white;
+		margin: 0;
+	}
+
+	h2.havebio {
+		cursor: help;
+	}
+
+	h4 {
+		color: white;
+	}
+
+	.bio {
+		display: none;
+	}
 }

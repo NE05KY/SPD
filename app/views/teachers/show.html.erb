@@ -1,0 +1,14 @@
+<% provide(:title, name(@teacher)) %>
+<div class="teacher-bg"></div>
+<div class="row teacher">
+	<div class="large-3 columns">
+		<%= gravatar_image_tag @teacher.email, alt: @teacher.sname, :gravatar => { filetype: :png, size: 210 } %>
+	</div>
+	<div class="large-9 columns">
+		<%= full_name(@teacher) %>
+		<div class="panel bio">
+			<blockquote>Short info<cite><%= name(@teacher) %></cite></blockquote>
+		</div>
+		<h4><%= @teacher.position %></h4>
+	</div>
+</div>
