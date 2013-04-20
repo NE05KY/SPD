@@ -16,4 +16,6 @@
 
 class Teacher < ActiveRecord::Base
   attr_accessible :description, :email, :fname, :lname, :position, :rank, :sname
+  validates :fname, :lname, :sname, presence: true, length: { in: 2..20 }
+  validates :email, :uniqueness => true
 end
