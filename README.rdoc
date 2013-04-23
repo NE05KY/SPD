@@ -1,3 +1,5 @@
 == Sigma Phi Delta
 
+= Training system for stocktaking of progress control.
+
 http://sigmaphidelta.herokuapp.com
