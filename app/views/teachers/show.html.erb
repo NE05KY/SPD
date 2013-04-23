@@ -11,7 +11,7 @@
 
 <div class="teacher-bg"></div>
 
-<div class="row teacher">
+<div class="row teacher hide-for-small">
 	<div class="large-3 columns">
 		<%= gravatar_image_tag @teacher.email, alt: @teacher.sname, :gravatar =>{ filetype: :png, size: 220 } %></div>
 	<div class="large-9 columns">
@@ -21,31 +21,4 @@
 	</div>
 </div>
 
-<div class="row">
-	<hr>
-	<div class="large-12 columns">
-		<h4 id="shedule"><a href="#shedule">Shedule</a></h4>
-		<table>
-			<thead>
-				<tr>
-					<th>Monday</th>
-					<th>Tuesday</th>
-					<th>Wednesday</th>
-					<th>Thursday</th>
-					<th>Friday</th>
-					<th>Saturday</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>10:00-14:00</td>
-					<td>10:00-14:00</td>
-					<td>10:00-14:00</td>
-					<td>off-time</td>
-					<td>10:00-14:00</td>
-					<td>10:00-14:00</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-</div>
+<%= render 'teachers/shedule' %>
