@@ -50,12 +50,25 @@
 	height: 400px;
 	position: relative;
 	z-index: -4;
-	margin-top: -75px;
+	margin-top: -300px;
+}
+
+.teacher-name {
+	h4 {
+		color: white;
+		font-size: 30px;
+		font-weight: 400;
+		margin-bottom: 18px;
+
+		small {
+			color: white;
+		}
+	}
 }
 
 .teacher {
 	position: relative;
-	margin-top: -130px;
+	margin-top: -60px;
 
 	h2 {
 		color: white;
