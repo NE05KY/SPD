@@ -6,10 +6,10 @@ Spd::Application.routes.draw do
   get "pages/about"
   get "pages/help"
 
-  match "/teachers", to: 'teachers#index', as: :teachers
-  match "/teachers/:id", to: 'teachers#show', as: :teacher
+  get "/teachers", to: 'teachers#index', as: :teachers
+  get "/teachers/:id", to: 'teachers#show', as: :teacher
 
-  match "/subjects", to: 'subjects#index', as: :subjects
+  get "/subjects", to: 'subjects#index', as: :subjects
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
