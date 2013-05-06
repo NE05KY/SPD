@@ -111,12 +111,12 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
-  coffee-rails
+  coffee-rails (~> 3.2.1)
   gravatar_image_tag
   jquery-rails
   pg
   rails
-  sass-rails
+  sass-rails (~> 3.2.3)
   sqlite3
-  uglifier
+  uglifier (>= 1.0.3)
   zurb-foundation
