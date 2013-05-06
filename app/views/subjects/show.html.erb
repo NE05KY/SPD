@@ -1,0 +1,18 @@
+<div class="row panel" id="s-main">
+	<div class="large-3 columns">
+		<img src="http://placehold.it/150x150" alt=""></div>
+	<div class="large-9 columns">
+		<h1><a id="s-t-name" href="#"><%= @subject.name %></a></h1>
+		<p><%= @subject.description %></p>
+	</div>
+</div>
+<div class="row hide" id="s-info">
+	<div class="large-5 large-offset-1 columns">
+		<h5 class="subheader">Teachers: </h5>
+		<% @subject.teachers.each do |t| %>
+			<%= link_to t do %>
+				<%= gravatar_image_tag t.email, title: t.sname, :gravatar =>{ filetype: :png, size: 50 } %>
+			<% end %>
+		<% end %>
+	</div>
+</div>

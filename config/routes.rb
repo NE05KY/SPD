@@ -10,6 +10,7 @@ Spd::Application.routes.draw do
   get "/teachers/:id", to: 'teachers#show', as: :teacher
 
   get "/subjects", to: 'subjects#index', as: :subjects
+  get "/subjects/:id", to: 'subjects#show', as: :subject
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -6,3 +6,20 @@
 		border-radius: 75px;
 	}
 }
+
+#s-main {
+	img {
+		border-radius: 75px;
+	}
+}
+
+#s-info {
+	img {
+		border-radius: 25px;
+		transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0;
+	
+		&:hover {
+			transform: rotate(360deg);
+		}
+	}
+}
