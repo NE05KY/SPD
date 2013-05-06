@@ -1,4 +1,4 @@
 class Subject < ActiveRecord::Base
-  belongs_to :teachers
+  has_and_belongs_to_many :teachers
   attr_accessible :description, :name
 end
