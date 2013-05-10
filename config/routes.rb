@@ -1,6 +1,4 @@
 Spd::Application.routes.draw do
-  get "subjects/index"
-
   root to: "pages#index"
 
   get "pages/about"

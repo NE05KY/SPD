@@ -15,6 +15,8 @@
 		<section class="top-bar-section">
 			<ul class="right">
 				<li class="divider"></li>
+				<li><a href="#">Shedule</a></li>
+				<li class="divider"></li>
 				<li class="<%= 'active' if controller.controller_name == 'teachers' %>">
 					<%= link_to 'Teachers', teachers_path %></li>
 				<li class="divider"></li>
@@ -24,6 +26,15 @@
 				<li class="divider"></li>
 				<li class="<%= 'active' if controller.controller_name == 'subjects' %>">
 					<%= link_to 'Subjects', subjects_path %>
+				</li>
+				<li class="divider"></li>
+				<li class="has-dropdown">
+					<a href="#">User</a>
+					<ul class="dropdown">
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Settings</a></li>
+						<li><a href="#">Log out</a></li>
+					</ul>
 				</li>
 				<li class="divider"></li>
 			</ul>
