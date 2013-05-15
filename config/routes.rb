@@ -1,4 +1,6 @@
 Spd::Application.routes.draw do
+  resources :admins
+
   root to: "pages#index"
 
   get "pages/about"

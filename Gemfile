@@ -4,7 +4,7 @@ gem 'rails'
 gem 'jquery-rails'
 gem 'annotate'
 gem 'gravatar_image_tag'
-
+gem 'bcrypt-ruby'
 
 # Gems used only for assets and not required
 # in production environments by default.

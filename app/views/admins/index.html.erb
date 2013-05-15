@@ -1,0 +1,41 @@
+<div class="row">
+  <div class=" large-10 large-centered columns">
+    <h1>Listing admins</h1>
+    <% if notice %>
+    <div data-alert class="alert-box success">
+      <%= notice %>
+      <a href="#" class="close">&times;</a>
+    </div>
+    <% end %>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Password digest</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @admins.each do |admin| %>
+        <tr>
+          <td>
+            <%= admin.name %></td>
+          <td>
+            <%= admin.password_digest %></td>
+          <td>
+            <ul class="button-group">
+              <li>
+                <%= link_to 'Edit', edit_admin_path(admin), class: 'small button nomargin' %></li>
+              <li>
+                <%= link_to 'Destroy', admin, method: :delete, data: { confirm: 'Are you sure?' }, class: 'small button nomargin' %></li>
+            </ul>
+          </td>
+        </tr>
+        <% end %></tbody>
+    </table>
+
+    <br />
+
+    <%= link_to 'New Admin', new_admin_path, class: 'button small' %></div>
+</div>
