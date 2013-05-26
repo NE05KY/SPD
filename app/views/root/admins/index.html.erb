@@ -26,9 +26,9 @@
           <td>
             <ul class="button-group">
               <li>
-                <%= link_to 'Edit', edit_admin_path(admin), class: 'small button nomargin' %></li>
+                <%= link_to 'Edit', edit_root_admin_path(admin), class: 'small button nomargin' %></li>
               <li>
-                <%= link_to 'Destroy', admin, method: :delete, data: { confirm: 'Are you sure?' }, class: 'small button nomargin' %></li>
+                <%= link_to 'Destroy', root_admin_path(admin), method: :delete, data: { confirm: 'Are you sure?' }, class: 'small button nomargin' %></li>
             </ul>
           </td>
         </tr>
@@ -37,5 +37,5 @@
 
     <br />
 
-    <%= link_to 'New Admin', new_admin_path, class: 'button small' %></div>
+    <%= link_to 'New Admin', new_root_admin_path, class: 'button small' %></div>
 </div>

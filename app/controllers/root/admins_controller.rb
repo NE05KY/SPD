@@ -1,4 +1,4 @@
-class AdminsController < ApplicationController
+class Root::AdminsController < ApplicationController
   # GET /admins
   # GET /admins.json
   def index
@@ -33,7 +33,7 @@ class AdminsController < ApplicationController
 
     respond_to do |format|
       if @admin.save
-        format.html { redirect_to admins_url, notice: "Admin #{@admin.name} was successfully created." }
+        format.html { redirect_to root_admins_url, notice: "Admin #{@admin.name} was successfully created." }
         format.json { render json: @admin, status: :created, location: @admin }
       else
         format.html { render action: "new" }
@@ -49,7 +49,7 @@ class AdminsController < ApplicationController
 
     respond_to do |format|
       if @admin.update_attributes(params[:admin])
-        format.html { redirect_to admins_url, notice: 'Admin #{@admin.name} was successfully updated.' }
+        format.html { redirect_to root_admins_url, notice: "Admin #{@admin.name} was successfully updated." }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -65,7 +65,7 @@ class AdminsController < ApplicationController
     @admin.destroy
 
     respond_to do |format|
-      format.html { redirect_to admins_url }
+      format.html { redirect_to root_admins_url }
       format.json { head :no_content }
     end
   end

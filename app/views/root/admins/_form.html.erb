@@ -1,4 +1,4 @@
-<%= form_for(@admin) do |f| %>
+<%= form_for [:root, @admin] do |f| %>
 <% if @admin.errors.any? %>
     <% @admin.errors.full_messages.each do |msg| %>
     <div data-alert class="alert-box alert">

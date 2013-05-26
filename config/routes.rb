@@ -1,5 +1,7 @@
 Spd::Application.routes.draw do
-  resources :admins
+  namespace :root do
+    resources :admins
+  end
 
   root to: "pages#index"
 
