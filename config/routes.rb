@@ -1,12 +1,14 @@
 Spd::Application.routes.draw do
-  controller :admin_sessions do
-    get 'login' => :new
-    post 'login' => :create
-    delete 'logout' => :destroy
-  end
+
 
   namespace :root do
     resources :admins
+
+    controller :admin_sessions do
+      get 'login' => :new
+      post 'login' => :create
+      delete 'logout' => :destroy
+    end
   end
 
   root to: "pages#index"

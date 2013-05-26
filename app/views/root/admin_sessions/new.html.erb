@@ -1,0 +1,19 @@
+<div class="row">
+	<div class=" large-5 large-centered columns">
+		<% if flash[:alert] %>
+		<div data-alert class="alert-box alert">
+			<%= flash[:alert] %>
+			<a href="#" class="close">&times;</a>
+		</div>
+		<% end %>
+
+		<%= form_tag do %>
+		<fieldset>
+			<legend>Admin authentication</legend>
+			<%= text_field_tag :name, params[:name], placeholder: 'name' %>
+			<%= password_field_tag :password, params[:password], placeholder: 'password' %>
+			<%= button_tag 'Login', class: 'expand' %>
+		</fieldset>
+		<% end %>
+	</div>
+</div>

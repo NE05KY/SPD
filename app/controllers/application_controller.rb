@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
 	  def admin_authorize
 	  	unless Admin.find_by_id(session[:admin_id])
-	  	redirect_to login_url, alert: 'Plz authorize'
+	  	redirect_to root_login_url, alert: 'Plz authorize'
 	  end
 	end
 end

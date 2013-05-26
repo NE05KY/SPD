@@ -9,5 +9,6 @@ class PagesController < ApplicationController
   end
 
   def root
+  	redirect_to root_admins_path
   end
 end
