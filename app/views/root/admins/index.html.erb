@@ -13,6 +13,7 @@
         <tr>
           <th>id</th>
           <th>name</th>
+          <th>last visit</th>
           <th>create</th>
           <th>actions</th>
         </tr>
@@ -21,10 +22,9 @@
         <% @admins.each do |admin| %>
         <tr>
           <td><%= admin.id %></td>
-          <td>
-            <%= admin.name %></td>
-          <td>
-            <%= distance_of_time_in_words_to_now(admin.created_at) %></td>
+          <td><%= admin.name %></td>
+          <td><%= distance_of_time_in_words_to_now admin.last_visit %></td>
+          <td><%= distance_of_time_in_words_to_now admin.created_at %></td>
           <td>
             <ul class="button-group">
               <li>

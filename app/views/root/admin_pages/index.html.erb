@@ -1,24 +1,32 @@
 <h2>Welcome to Sigma Phi Delta</h2>
-<h5 class="subheader">Today is <%= Time.now.to_formatted_s(:short) %></h5><br>
-<h5 class="subheader">Your last visit: <%= Time.now.to_formatted_s(:short) %></h5>
-
+<h5 class="subheader right">Today is <%= Time.now.to_formatted_s(:short) %></h5><br>
 
 <h4>System info</h4>
-<table>
-	<thead>
-		<tr>
-			<th>table</th>
-			<th>count</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Teachers</td>
-			<td><%= @teachers.count %></td>
-		</tr>
-		<tr>
-			<td>Subjects</td>
-			<td><%= @subjects.count %></td>
-		</tr>
-	</tbody>
-</table>
+<div class="row">
+	<div class="large-3 columns">
+		<ul class="pricing-table">
+		  <li class="title">Teachers</li>
+		  <li class="price"><%= @teachers.count %></li>
+		  <li class="bullet-item">1 Assistant</li>
+		  <li class="bullet-item">1 Teacher</li>
+		  <li class="bullet-item">0 Docent</li>
+		  <li class="bullet-item">0 Professor</li>
+		  <li class="cta-button"><a class="button" href="#">View</a></li>
+		</ul>
+	</div>
+	<div class="large-3 columns">
+		<ul class="pricing-table">
+		  <li class="title">Subjects</li>
+		  <li class="price"><%= @subjects.count %></li>
+		  <li class="bullet-item">240 hours lections</li>
+		  <li class="bullet-item">100 hours labs&practice</li>
+		  <li class="bullet-item">10 tests</li>
+		  <li class="bullet-item">200 subsribed students</li>
+		  <li class="cta-button"><a class="button" href="#">View</a></li>
+		</ul>
+	</div>
+	<div class="large-3 columns">
+	</div>	
+	<div class="large-3 columns">
+	</div>	
+</div>

@@ -6,6 +6,7 @@ class Root::AdminSessionsController < ApplicationController
   def create
   	admin = Admin.find_by_name(params[:name])
   	if admin and admin.authenticate(params[:password])
+      admin.update_attributes(last_visit: Time.now)
   		session[:admin_id] = admin.id
   		redirect_to root_roots_path
   	else
