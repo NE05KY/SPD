@@ -6,4 +6,8 @@ class TeachersController < ApplicationController
   def show
   	@teacher = Teacher.find(params[:id])
   end
+
+  def index_root
+
+  end
 end

@@ -1,0 +1,24 @@
+<h2>Welcome to Sigma Phi Delta</h2>
+<h5 class="subheader">Today is <%= Time.now.to_formatted_s(:short) %></h5><br>
+<h5 class="subheader">Your last visit: <%= Time.now.to_formatted_s(:short) %></h5>
+
+
+<h4>System info</h4>
+<table>
+	<thead>
+		<tr>
+			<th>table</th>
+			<th>count</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Teachers</td>
+			<td><%= @teachers.count %></td>
+		</tr>
+		<tr>
+			<td>Subjects</td>
+			<td><%= @subjects.count %></td>
+		</tr>
+	</tbody>
+</table>

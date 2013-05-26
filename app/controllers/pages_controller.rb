@@ -7,8 +7,4 @@ class PagesController < ApplicationController
 
   def help
   end
-
-  def root
-  	redirect_to root_admins_path
-  end
 end

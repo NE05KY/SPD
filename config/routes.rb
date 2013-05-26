@@ -3,6 +3,7 @@ Spd::Application.routes.draw do
 
   # Admin panel
   namespace :root do
+    root to: 'admin_pages#index', as: :roots
     controller :admin_sessions do
       get 'login' => :new
       post 'login' => :create
@@ -27,5 +28,4 @@ Spd::Application.routes.draw do
   # Pages
   get "pages/about"
   get "pages/help"
-  get "root/", to: 'pages#root', as: :roots
 end

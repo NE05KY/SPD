@@ -24,7 +24,7 @@
           <td>
             <%= admin.name %></td>
           <td>
-            <%= admin.created_at %></td>
+            <%= distance_of_time_in_words_to_now(admin.created_at) %></td>
           <td>
             <ul class="button-group">
               <li>
