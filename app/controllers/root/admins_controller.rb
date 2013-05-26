@@ -1,4 +1,5 @@
 class Root::AdminsController < ApplicationController
+  before_filter :admin_authorize
   layout "root" 
   # GET /admins
   # GET /admins.json

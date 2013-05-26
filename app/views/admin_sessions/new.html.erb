@@ -1,0 +1,17 @@
+<% if flash[:alert] %>
+    <div data-alert class="alert-box alert">
+      <%= flash[:alert] %>
+      <a href="#" class="close">&times;</a>
+    </div>
+<% end %>
+
+<%= form_tag do %>
+	<%= label_tag :mame, 'Name:' %>
+	<%= text_field_tag :name, params[:name] %>
+
+	<%= label_tag :password, 'Password:' %> 
+	<%= password_field_tag :password, params[:password] %>
+
+	<%= submit_tag 'Login' %>
+
+<% end %>

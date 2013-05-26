@@ -1,4 +1,10 @@
 Spd::Application.routes.draw do
+  controller :admin_sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+
   namespace :root do
     resources :admins
   end
@@ -7,7 +13,7 @@ Spd::Application.routes.draw do
 
   get "pages/about"
   get "pages/help"
-  get "root/", to: 'pages#root'
+  get "root/", to: 'pages#root', as: :roots
 
   get "/teachers", to: 'teachers#index', as: :teachers
   get "/teachers/:id", to: 'teachers#show', as: :teacher
