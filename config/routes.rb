@@ -7,6 +7,7 @@ Spd::Application.routes.draw do
 
   get "pages/about"
   get "pages/help"
+  get "root/", to: 'pages#root'
 
   get "/teachers", to: 'teachers#index', as: :teachers
   get "/teachers/:id", to: 'teachers#show', as: :teacher

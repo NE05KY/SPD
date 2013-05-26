@@ -11,18 +11,20 @@
     <table>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Password digest</th>
-          <th>Actions</th>
+          <th>id</th>
+          <th>name</th>
+          <th>create</th>
+          <th>actions</th>
         </tr>
       </thead>
       <tbody>
         <% @admins.each do |admin| %>
         <tr>
+          <td><%= admin.id %></td>
           <td>
             <%= admin.name %></td>
           <td>
-            <%= admin.password_digest %></td>
+            <%= admin.created_at %></td>
           <td>
             <ul class="button-group">
               <li>

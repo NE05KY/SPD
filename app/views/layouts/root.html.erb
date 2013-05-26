@@ -1,0 +1,27 @@
+<%= render 'layouts/head' %>
+<body>
+	<%= render 'layouts/header' %>
+<div class="row">
+	<div class="large-2 columns">
+		<ul class="side-nav">
+			<li>
+				<%= link_to 'Admins', root_admins_path %></li>
+			<li>
+				<%= link_to 'Teachers', '#' %></li>
+			<li>
+				<%= link_to 'Subjects', '#' %></li>								
+			<li>
+				<%= link_to 'Students', '#' %></li>				
+			<li class="divider"></li>
+			<li>
+				<%= link_to 'App settings', '#' %></li>			
+		</ul>
+	</div>
+	<div class="large-10 columns">
+		<%= yield %></div>
+</div>
+    <%= render 'layouts/footer' %>
+
+    <%= javascript_include_tag "application" %>
+</body>
+</html>

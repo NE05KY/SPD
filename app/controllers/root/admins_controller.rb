@@ -1,4 +1,5 @@
 class Root::AdminsController < ApplicationController
+  layout "root" 
   # GET /admins
   # GET /admins.json
   def index
