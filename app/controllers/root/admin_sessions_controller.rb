@@ -1,5 +1,6 @@
 class Root::AdminSessionsController < ApplicationController
   def new
+    redirect_to roots_path if session[:admin_id]
   end
 
   def create
