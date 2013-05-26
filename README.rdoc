@@ -1,5 +1,5 @@
-== Sigma Phi Delta
+= Sigma Phi Delta
 
-= Training system for stocktaking of progress control.
+Training system for stocktaking of progress control.
 
 http://sigmaphidelta.herokuapp.com
