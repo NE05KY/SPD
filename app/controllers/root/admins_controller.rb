@@ -32,6 +32,7 @@ class Root::AdminsController < ApplicationController
   # POST /admins.json
   def create
     @admin = Admin.new(params[:admin])
+    @admin.last_visit = Time.now
 
     respond_to do |format|
       if @admin.save
