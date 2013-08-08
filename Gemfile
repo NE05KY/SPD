@@ -4,15 +4,15 @@ gem 'rails'
 gem 'jquery-rails'
 gem 'annotate'
 gem 'gravatar_image_tag'
-gem 'bcrypt-ruby'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'zurb-foundation'
-  gem 'sass-rails', '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
 end
 
 group :development, :test do

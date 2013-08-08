@@ -11,8 +11,8 @@
 #
 
 class Admin < ActiveRecord::Base
-  attr_accessible :name, :password, :password_confirmation, :last_visit
+  # attr_accessible :name, :password, :password_confirmation, :last_visit
   has_secure_password
-  validates :name, presence: true, uniqueness: true, :format => { with: /^[a-zA-Z]+$/ }
+  validates :name, presence: true, uniqueness: true #, :format => { with: /^[a-zA-Z]+$/ }
   validates :password, length: { in: 4..20 }
 end
